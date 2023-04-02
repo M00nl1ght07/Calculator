@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="buttondel">÷</string>
+    <string name="buttonskobka">()</string>
+    <string name="buttonC">C</string>
+    <string name="buttonravno">=</string>
+    <string name="buttontochka">.</string>
+    <string name="buttonnull">0</string>
+    <string name="buttonplusminus">+ -</string>
+    <string name="buttonplus">+</string>
+    <string name="buttonthree">3</string>
+    <string name="buttontwo">2</string>
+    <string name="buttonone">1</string>
+    <string name="buttonminus">-</string>
+    <string name="buttonsix">6</string>
+    <string name="buttonfive">5</string>
+    <string name="vivod">123</string>
+    <string name="buttoneight">8</string>
+    <string name="buttonnine">9</string>
+    <string name="buttonumn">*</string>
+    <string name="buttonseven">7</string>
+    <string name="buttonfour">4</string>
+    <string name="buttonproc">%</string>
+</resources>
+
