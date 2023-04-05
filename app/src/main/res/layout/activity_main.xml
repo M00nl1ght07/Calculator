@@ -11,37 +11,37 @@
         android:id="@+id/buttondel"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="65dp"
         android:layout_marginEnd="10dp"
         android:backgroundTint="#4E4D4D"
-        android:text="@string/buttondel"
+        android:text="/"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vivod" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/buttonskobka"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="65dp"
         android:backgroundTint="#4E4D4D"
         android:text="@string/buttonskobka"
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/buttonC"
-        app:layout_constraintTop_toBottomOf="@+id/vivod" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/buttonC"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="65dp"
         android:backgroundTint="#4E4D4D"
         android:text="@string/buttonC"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vivod" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/buttonravno"
@@ -74,6 +74,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:backgroundTint="#4E4D4D"
+
         android:text="@string/buttonnull"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/buttontochka"
@@ -113,6 +114,7 @@
         android:layout_marginEnd="30dp"
         android:backgroundTint="#4E4D4D"
         android:text="@string/buttonthree"
+
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/buttonplus"
         app:layout_constraintTop_toBottomOf="@+id/buttonsix" />
@@ -125,6 +127,7 @@
         android:layout_marginEnd="30dp"
         android:backgroundTint="#4E4D4D"
         android:text="@string/buttontwo"
+
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/buttonthree"
         app:layout_constraintTop_toBottomOf="@+id/buttonfive" />
@@ -138,6 +141,7 @@
         android:layout_marginEnd="30dp"
         android:backgroundTint="#4E4D4D"
         android:text="@string/buttonone"
+
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/buttontwo"
         app:layout_constraintStart_toStartOf="parent"
@@ -162,6 +166,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:backgroundTint="#4E4D4D"
+
         android:text="@string/buttonsix"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/buttonminus"
@@ -174,25 +179,11 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:backgroundTint="#4E4D4D"
+
         android:text="@string/buttonfive"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/buttonsix"
         app:layout_constraintTop_toBottomOf="@+id/buttoneight" />
-
-    <TextView
-        android:id="@+id/vivod"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="110dp"
-        android:layout_marginEnd="10dp"
-        android:text="@string/vivod"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttoneight"
@@ -201,6 +192,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:backgroundTint="#4E4D4D"
+
         android:text="@string/buttoneight"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/buttonnine"
@@ -238,6 +230,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:backgroundTint="#4E4D4D"
+        android:onClick="clickNumber"
         android:text="@string/buttonseven"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/buttoneight"
@@ -262,11 +255,28 @@
         android:id="@+id/buttonpr"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="65dp"
         android:backgroundTint="#4E4D4D"
         android:text="@string/buttonproc"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/buttondel"
         app:layout_constraintStart_toEndOf="@+id/buttonskobka"
-        app:layout_constraintTop_toBottomOf="@+id/vivod" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="10dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
